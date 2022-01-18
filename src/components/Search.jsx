@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDebounce } from 'use-debounce';
 
 import { useStateContext } from '../context/StateContext';
-import { Links } from './Links';
+import Links from './Links';
 
 export default function Search() {
     const { setSearchTerm } = useStateContext()

@@ -20,7 +20,8 @@ export const StateProvider = ({ children }) => {
             }
         };
         const res = await axios.request(options)
-        console.log(res)
+        setResults(res.data)
+        setLoading(false)
     }
 
     return (
